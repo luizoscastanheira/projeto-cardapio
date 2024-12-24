@@ -1,0 +1,10 @@
+.containerBusca{
+    width: 100%;
+    max-width: 1024px;
+}
+
+.inputBusca{
+    width: 100%;
+    font-size: 14px;
+    padding: 20px;
+}

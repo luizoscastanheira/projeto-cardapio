@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* Estilizando o Cabeçalho */
+.containerHeader{
+    max-width: 1024px;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../public/banner.png');
+    background-size: cover;
+}
+
+.boxBanner{
+    width: 50%;
+    & h1{
+        letter-spacing: 5px;
+        font-size: 46px;
+    }
+    & p{
+        font-size: 32px;
+        font-family: 'Dancing Script', cursive;
+        color: #daa520;
+    }
+}
+
+/* Estilizando a seção main */
+.containerMain{
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Estilizando o Box Cardápio*/
+.boxCardapio{
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f3f3f3;
+    & h2{
+        color: #daa520;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 40px;
+    }
+}
+
+.boxCards{
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
