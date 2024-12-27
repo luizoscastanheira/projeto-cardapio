@@ -1,10 +1,12 @@
 /* Estilizando os cards */
 
 .card{
-    min-width: 250px;
+    width: 250px;
     border: #daa520 1px solid;
+    border-radius: 15px;
     background-color: #f3f3f3;
     display: flex;
+    justify-content: space-between;
     flex-grow: 1;
     flex-direction: column;
     color: #000000;
@@ -18,7 +20,7 @@
 
 .containerTextos{
     width: 100%;
-    height: 150px;
+    height: auto;
     padding: 10px;
 }
 
@@ -26,7 +28,13 @@
  display: flex;   
  flex-direction: column;
  gap: 5px;
- & span{
+    & span{
     text-align: right;
- }
+    }
+}
+
+.imgCard{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import estilos from "./CampoDeBusca.module.css";
+// Importando imagem
+import Lupa from "../../../public/lupa.png";
 
 export default function CampoDeBusca(){
     return(

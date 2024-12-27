@@ -1,3 +1,5 @@
+'use client'
+import { useState } from "react";
 import Image from "next/image";
 import estilos from "./page.module.css";
 
@@ -5,32 +7,42 @@ import estilos from "./page.module.css";
 import Categorias from "@/componentes/Categorias";
 import CampoDeBusca from "@/componentes/CampoDeBusca";
 import Cards from "@/componentes/Cards";
+import Cabecalho from "@/componentes/Cabecalho";
+
+// Importando as funções
+import { retornaProdutos, produtosFiltrados } from "@/servico/index";
 
 export default function Home() {
-  return (
-    <>
-      <header className={estilos.containerHeader}>
-        <div className={estilos.boxBanner}>
-          <h1>RESTAURANT</h1>
-          <p>
-            De pratos clássicos a criações supreendentes nosso cardápio é um requinte de sabores refinados.
-          </p>
-        </div>
-      </header>
 
+const [valorDoFiltro, setValorDoFiltro] = useState("Entradas")
+
+// Variável de Estado que busca uma função para exibir todos os produtos
+// Para teste - Trocando entre as funções retornaProdutos e produtosFiltrados nós mudamos os cards listados
+const [exibeTodosProdutos, setExibeTodosProdutos] = useState(produtosFiltrados(valorDoFiltro)); 
+
+return (
+    <>
+      <Cabecalho />
       <main className={estilos.containerMain}>
-        <Categorias />
+
+        {/* Passando para o componente Categorias as funcoes de troca de estado das variáveis */}
+        <Categorias setValorDoFiltro={setValorDoFiltro} setExibeTodosProdutos={setExibeTodosProdutos} />
+        
+        <p>{valorDoFiltro}</p>
+        
         <CampoDeBusca/>
+        
         <section className={estilos.boxCardapio}>
-          <h2>Cardápio</h2>
+          <h2>Cardápio - {valorDoFiltro}</h2>
           <div className={estilos.boxCards}>
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            
-            
-            <Cards />
+          
+            {
+                exibeTodosProdutos.map((produto) => (
+                    <Cards key={produto.id} nome={produto.nome} categoria={produto.categoria} descricao={produto.descricao} preco={produto.preco} imagem={produto.imagem}/>
+                ))
+            }
+          
+
           </div>
         </section>
       </main>

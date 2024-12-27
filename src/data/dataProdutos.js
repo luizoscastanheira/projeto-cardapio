@@ -1,42 +1,42 @@
 // Este arquivo corresponde a camada de dados.
 
-import espaguete from "/public/espaguete.jpg";
-import lasanha from "/public/lasanha.jpg";
-import ravioli from "/public/ravioli.jpg";
-import capeletti from "/public/capeletti.jpg";
-import nhoque from "/public/nhoque.jpg";
-import bruschetta from "/public/bruschetta.jpg";
-import carpaccio from "/public/carpaccio.jpg";
-import paella from "/public/paella.jpg";
-import ebiSpicy from "/public/ebi-spicy.jpg";
-import aligot from "/public/aligot.jpg";
-import fileMignon from "/public/file-mignon.jpg";
-import picanha from "/public/picanha.png";
-import bifeAncho from "/public/bife-ancho.jpg";
-import tomahwankSteak from "/public/tomahawk-steak.jpg";
-import primeRib from "/public/prime-rib.jpg";
-import tiramisu from "/public/tiramisu.jpg";
-import cheesecake from "/public/cheesecake.jpg";
-import banoffee from "/public/banoffee.png";
-import milFolhas from "/public/mil-folhas.jpg";
-import pudim from "/public/pudim.jpg";
-import cerveja from "/public/cerveja.jpg";
-import refrigerante from "/public/refrigerante.jpg";
-import suco from "/public/suco.jpg";
-import whiskey from "/public/whiskey.jpg";
-import agua from "/public/agua.jpg";
-import saladaCeasar from "/public/salada-ceasar.jpg";
-import saladaCaprese from "/public/salada-caprese.jpg";
-import saladaWaldorf from "/public/salada-waldorf.jpg";
-import saladaGrega from "/public/salada-grega.jpg";
-import saladaNicoise from "/public/salada-nicoise.jpg";
+import espaguete from "../../public/espaguete.jpg";
+import lasanha from "../../public/lasanha.jpg";
+import ravioli from "../../public/ravioli.jpg";
+import capeletti from "../../public/capeletti.jpg";
+import nhoque from "../../public/nhoque.jpg";
+import bruschetta from "../../public/bruschetta.jpg";
+import carpaccio from "../../public/carpaccio.jpg";
+import paella from "../../public/paella.jpg";
+import ebiSpicy from "../../public/ebi-spicy.jpg";
+import aligot from "../../public/aligot.jpg";
+import fileMignon from "../../public/file-mignon.jpg";
+import picanha from "../../public/picanha.png";
+import bifeAncho from "../../public/bife-ancho.jpg";
+import tomahwankSteak from "../../public/tomahawk-steak.jpg";
+import primeRib from "../../public/prime-rib.jpg";
+import tiramisu from "../../public/tiramisu.jpg";
+import cheesecake from "../../public/cheesecake.jpg";
+import banoffee from "../../public/banoffee.png";
+import milFolhas from "../../public/mil-folhas.jpg";
+import pudim from "../../public/pudim.jpg";
+import cerveja from "../../public/cerveja.jpg";
+import refrigerante from "../../public/refrigerante.jpg";
+import suco from "../../public/suco.jpg";
+import whiskey from "../../public/whiskey.jpg";
+import agua from "../../public/agua.jpg";
+import saladaCeasar from "../../public/salada-ceasar.jpg";
+import saladaCaprese from "../../public/salada-caprese.jpg";
+import saladaWaldorf from "../../public/salada-waldorf.jpg";
+import saladaGrega from "../../public/salada-grega.jpg";
+import saladaNicoise from "../../public/salada-nicoise.jpg";
 
 export const produtos = [
   {
     id: 1,
     nome: "Espaguete",
     categoria: "Massas",
-    preco: 20.0,
+    preco: 25.55,
     descricao:
       "Um delicioso espaguete que pode ser combinado com diversos molhos, como bolonhesa, carbonara, alho e oleo e pesto",
     imagem: espaguete,
@@ -54,7 +54,7 @@ export const produtos = [
     id: 3,
     nome: "Ravioli",
     categoria: "Massas",
-    preco: 24.25,
+    preco: 44.25,
     descricao:
       "Uma massa recheada com diferentes ingredientes como queijo, carne, espinafre ou cogumelos",
     imagem: ravioli,
@@ -133,9 +133,9 @@ export const produtos = [
   },
   {
     id: 12,
-    nome: "Picanha",
+    nome: "Picanha do L",
     categoria: "Carnes",
-    preco: 35.99,
+    preco: 65.99,
     descricao:
       "Uma execelente carne que tem uma capa de gordura e fibras generosas que acentuam o sabor e a maciez do corte",
     imagem: picanha,
