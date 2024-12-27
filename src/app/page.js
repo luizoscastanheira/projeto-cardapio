@@ -30,7 +30,7 @@ return (
         
         <p>{valorDoFiltro}</p>
         
-        <CampoDeBusca/>
+        <CampoDeBusca setValorDoFiltro={setValorDoFiltro} setExibeTodosProdutos={setExibeTodosProdutos}/>
         
         <section className={estilos.boxCardapio}>
           <h2>Cardápio - {valorDoFiltro}</h2>

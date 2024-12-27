@@ -10,7 +10,12 @@ export const retornaProdutos = () => {
 };
 
 // Filtrando por categoria
-export const produtosFiltrados = (categoria) => {
-    return produtos.filter((produto) => produto.categoria === categoria);
+export const produtosFiltrados = (item) => {
+    return produtos.filter((produto) => produto.categoria === item);
+};
+
+// Filtrando busca por categoria ou nome
+export const buscaTexto = (item) => {
+    return produtos.filter((produto) =>  produto.nome === item ||  produto.categoria === item);
 };
 
