@@ -16,6 +16,12 @@ export const produtosFiltrados = (item) => {
 
 // Filtrando busca por categoria ou nome
 export const buscaTexto = (item) => {
-    return produtos.filter((produto) =>  produto.nome === item ||  produto.categoria === item);
+    return produtos.filter((produto) =>  
+        produto.nome.toLowerCase().includes(item.toLowerCase()) ||  
+        produto.categoria.toLowerCase().includes(item.toLowerCase()) );
 };
 
+// Filtrando busca por categoria ou nome
+//export const buscaTexto = (item) => {
+//    return produtos.filter((produto) =>  produto.nome === item ||  produto.categoria === item);
+//};

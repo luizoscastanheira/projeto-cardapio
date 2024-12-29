@@ -22,14 +22,15 @@ const [exibeTodosProdutos, setExibeTodosProdutos] = useState(produtosFiltrados(v
 
 return (
     <>
+    <section className={estilos.section_topo_alerta}>
+        <p>Atenção! Este é um site fictício apenas para fins didáticos.</p>
+    </section>
       <Cabecalho />
       <main className={estilos.containerMain}>
 
         {/* Passando para o componente Categorias as funcoes de troca de estado das variáveis */}
         <Categorias setValorDoFiltro={setValorDoFiltro} setExibeTodosProdutos={setExibeTodosProdutos} />
-        
-        <p>{valorDoFiltro}</p>
-        
+     
         <CampoDeBusca setValorDoFiltro={setValorDoFiltro} setExibeTodosProdutos={setExibeTodosProdutos}/>
         
         <section className={estilos.boxCardapio}>
@@ -41,11 +42,13 @@ return (
                     <Cards key={produto.id} nome={produto.nome} categoria={produto.categoria} descricao={produto.descricao} preco={produto.preco} imagem={produto.imagem}/>
                 ))
             }
-          
-
+   
           </div>
         </section>
       </main>
+      <footer id={estilos.rodape}>
+        Desenvolvido por - Luiz Otávio - <a href="mailto:thelosc@proton.me">thelosc@proton.me</a>
+      </footer>
     </>
   );
 }
