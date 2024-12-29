@@ -8,7 +8,6 @@ export default function CampoDeBusca({setValorDoFiltro, setExibeTodosProdutos}){
 const handleBuscarProduto = (textoDigitado) => {
     setValorDoFiltro(textoDigitado)
     setExibeTodosProdutos(buscaTexto(textoDigitado))
-    console.log(textoDigitado)
 }
 
     return(
